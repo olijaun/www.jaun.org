@@ -2,6 +2,13 @@
 
 <head>
 <title>www.jaun.org</title>
+	
+<link rel="me" href="https://twitter.com/oliverjaun" />
+<link rel="me" href="https://github.com/olijaun" />
+<link rel="me" href="mailto:oliver@jaun.org" />
+<link rel="me" href="https://indieweb.social/@olijaun" />
+<link rel="me" href="https://jaun.org/@oliver" />
+	
 </head>
 
 <body>
@@ -12,40 +19,6 @@ Currently nothing here.
 You can check-out my <a href="oliver.jaun.org">personal blog</a>.
 </p>
 </body>
-
-  <script>
-    /* unblu snippet V4.2.20160712 */
-unblu = {APIKEY: "mNEmjo60SiSon4WxwyDefw", SERVER: "https://start.unblu.com"};
-(function() {
-	unblu.c = [];
-	unblu.registerApiConsumer = function(callback, errorCallback, apiNames) {
-		if (callback instanceof Array) {
-			if (window["Promise"]) {
-				return new Promise(function(resolve, reject) {
-					unblu.c.push({a: callback, c: resolve, e: reject});
-				});
-			} else {
-				throw new Error("Promise not available");
-			}
-		}
-		
-		unblu.c.push({a: apiNames, c: callback, e: errorCallback});
-	}
-	unblu.setLocale = function(locale) {
-		unblu.l = locale;
-	}
-	if (!window["x-unblu-tmp-window-name"]) window["x-unblu-tmp-window-name"]=window.name;
-	var q = document.getElementsByTagName("script")[0];
-	if (q) {
-		var g = document.createElement("script"); 
-		g.setAttribute("src", unblu.SERVER + "/unblu/starter.js"); 
-		g.setAttribute("type", "text/javascript"); 
-		g.setAttribute("defer","defer");
-		q.parentNode.appendChild(g);
-	}
-})();
-
-  </script>
   
   
 </html>
